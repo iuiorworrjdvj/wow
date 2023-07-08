@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="sabin.js"></script>
+	<link rel="stylesheet" href="sabin.css">
+	<style>div{
+		margin: 30px;
+	}
+	button{
+		width: 50px;
+		height: 50px;
+		font: auto;
+	
+	}
+	input{
+		width:200px;
+		height:40px;
+		
+	}
+	button{
+		background-color: grey;
+	}
+	#C{
+		background-color: rgb(255, 255, 0);
+	}</style>
+	<script>function display(value){
+		document.getElementById("output").value+=value;
+		
+	}
+	function clearall(){
+		document.getElementById("output").value= '';
+	
+	}
+	function calculate(){
+		let myfile= document.getElementById("output").value;
+		let result=eval(myfile);
+		document.getElementById("output").value=result;
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</script>
+</head>
+<body>
+	<center>
+		<input type="text" id="output"  readonly>
+<div id="firstdiv">
+	
+	<button type="button" id="1" name="1" value="1"  onclick="display(1)">1</button>
+	<button type="button" id="2" name="1" value="2" onclick="display(2)">2</button>
+	<button type="button" id="3" name="1" value="3" onclick="display(3)">3</button>
+	<button type="button" id="+" name="+" value="+" onclick="display('+')">+</button><br>
+	<button type="button" id="4" name="1" value="4" onclick="display(4)">4</button>
+	<button type="button" id="5" name="1" value="5" onclick="display(5)">5</button>
+	<button type="button" id="6" name="1" value="6" onclick="display(6)">6</button>
+	<button type="button" id="-" name="-" value="-" onclick="display('-')">-</button><br>
+	<button type="button" id="7" name="1" value="7" onclick="display(7)">7</button>
+	<button type="button" id="8" name="1" value="8"  onclick="display(8)">8</button>
+	<button type="button" id="9" name="1" value="9" onclick="display(9)">9</button>
+	<button type="button" id="*" name="*" value="*" onclick="display('*')">*</button><br>
+	<button type="button" id="0" name="1" value="0" onclick="display(0)">0</button>
+	<button type="button" id="/" name="/" value="/" onclick="display('/')">/</button>
+	<button type="button" id="C" name="C" value="C" onclick="clearall()">C</button>
+	
+	<button type="button" id="=" name="=" value="=" onclick="calculate()">=</button>
+	
+</div></center>
+</body>
+</html>
